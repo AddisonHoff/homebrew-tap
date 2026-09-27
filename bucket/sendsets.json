@@ -1,0 +1,30 @@
+{
+  "version": "0.4.24",
+  "description": "SendSets from the command line: campaigns, contacts, mailboxes, inbox",
+  "homepage": "https://sendsetsapi.com",
+  "license": "Apache-2.0",
+  "architecture": {
+    "64bit": {
+      "url": "https://github.com/AddisonHoff/sendsets-releases/releases/download/v0.4.24/sendsets_windows_amd64.zip",
+      "hash": "80b46bfd1819a34a3ad7d6ac6f6e5b59b5908a07c03e036a1464f583ed9b655f"
+    },
+    "arm64": {
+      "url": "https://github.com/AddisonHoff/sendsets-releases/releases/download/v0.4.24/sendsets_windows_arm64.zip",
+      "hash": "a21fe92953504a5d1e6d5ab0400e229bd96d8a0b8bdef7db0c90cb716fac1260"
+    }
+  },
+  "bin": "sendsets.exe",
+  "checkver": {
+    "github": "https://github.com/AddisonHoff/sendsets-releases"
+  },
+  "autoupdate": {
+    "architecture": {
+      "64bit": {
+        "url": "https://github.com/AddisonHoff/sendsets-releases/releases/download/v$version/sendsets_windows_amd64.zip"
+      },
+      "arm64": {
+        "url": "https://github.com/AddisonHoff/sendsets-releases/releases/download/v$version/sendsets_windows_arm64.zip"
+      }
+    }
+  }
+}
